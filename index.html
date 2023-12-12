@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Analysis</title>
+  <script src="display.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <div id="file">
+      <div class="input">
+        <!-- <audio id="myAudio" controls></audio> -->
+        <label for="audio" class="label">Pasirinkti failą</label>
+        <input type="file" id="audio" accept="audio/*" style="visibility:hidden;">
+      </div>
+    </div>
+      <div class="slider">
+        <input type="color"  id="myRange">
+      </div>
+      <div class="play">
+        <audio id="selectedAudio" controls></audio>
+      </div>
+    </nav>
+    <main>
+      
+      <canvas id="frequencyCanvas"></canvas>
+    </main>
+
+  </div>
+</body>
+
+</html>
